@@ -5,9 +5,9 @@ namespace ToolBox.Collections
 {
 	public class Collection<T> : ScriptableObject
 	{
-		public T[] Elements => elements;
-
 		[SerializeField, ReorderableList] private T[] elements = null;
+
+		public T GetElement(int index) => elements[index];
 	}
 
 }
