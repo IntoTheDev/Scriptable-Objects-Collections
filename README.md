@@ -1,2 +1,2 @@
-# Scriptable-Objects-Collections
-Scriptable Objects Collections for Unity
+ScriptableObject Collections
+ScriptableObject Collections for Unity
