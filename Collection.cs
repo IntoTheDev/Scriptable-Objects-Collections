@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using ToolBox.Attributes;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace ToolBox.Collections
@@ -9,6 +9,6 @@ namespace ToolBox.Collections
 	{
 		public ReadOnlyCollection<T> Elements => Array.AsReadOnly(elements);
 
-		[SerializeField, ReorderableList] private T[] elements = null;
+		[SerializeField, ListDrawerSettings(Expanded = true)] private T[] elements = null;
 	}
 }
