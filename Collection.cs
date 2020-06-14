@@ -7,8 +7,8 @@ namespace ToolBox.Collections
 {
 	public class Collection<T> : ScriptableObject
 	{
-		public ReadOnlyCollection<T> Elements => Array.AsReadOnly(elements);
+		public ReadOnlyCollection<T> Elements => Array.AsReadOnly(_elements);
 
-		[SerializeField, ListDrawerSettings(Expanded = true)] private T[] elements = null;
+		[SerializeField, ListDrawerSettings(Expanded = true)] private T[] _elements = null;
 	}
 }
